@@ -1,0 +1,16 @@
+# Node
+node_modules/
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/plan
+terraform.tfstate
+terraform/.terraform.lock.hcl
+
+# Secrets | Keys
+*.pem
+
+# Github Actions
+.env

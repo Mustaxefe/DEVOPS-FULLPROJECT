@@ -2,7 +2,7 @@
 
 Projeto pessoal para demonstrar práticas completas de DevOps, cobrindo **infraestrutura como código**, **containers**, **Kubernetes (K3s)**, **CI/CD** e **observabilidade** em uma stack simples de API Node.js.
 
-> **Objetivo**: criar um projeto de ponta a ponta, com foco em aprendizado prático e apresentação para recrutadores.
+> **Objetivo**: criar um projeto de ponta a ponta, com foco em aprendizado prático.
 
 ---
 

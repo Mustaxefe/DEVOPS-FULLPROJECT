@@ -35,20 +35,20 @@ resource "aws_instance" "aws-web-server" {
 
 
 resource "aws_security_group" "allow_app" {
-  name    = "allow-app-3000"
+  name    = "allow-app-80-ssh"
 
   ingress {
     from_port = 22
     to_port   = 22
     protocol  = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = var.allowed_ssh_cidrs
   }
 
   ingress {
-    from_port = 3000
-    to_port   = 3000
+    from_port = 80
+    to_port   = 80
     protocol  = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = var.allowed_http_cidrs
   }
 
   egress {

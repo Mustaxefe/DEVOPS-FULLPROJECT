@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: obs-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: obs-api
+  template:
+    metadata:
+      labels:
+        app: obs-api
+    spec:
+      containers:
+        - name: obs-api
+          image: 903913341413.dkr.ecr.sa-east-1.amazonaws.com/obs-api:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: PORT
+              value: "3000"
